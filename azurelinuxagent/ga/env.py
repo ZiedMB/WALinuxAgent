@@ -131,7 +131,11 @@ class EnvHandler(object):
     def handle_hostname_update(self):
         curr_hostname = socket.gethostname()
         if curr_hostname != self.hostname:
+<<<<<<< HEAD
             logger.info("EnvMonitor: Raluca Detected hostname change: {0} -> {1}",
+=======
+            logger.info("EnvMonitor: Zied Detected hostname change: {0} -> {1}",
+>>>>>>> 758e808c295b60d7cb5cfba1efe2d74a3f46f034
                         self.hostname,
                         curr_hostname)
             self.osutil.set_hostname(curr_hostname)
